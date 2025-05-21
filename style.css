@@ -1,0 +1,114 @@
+:root {
+    --greenS: rgb(23, 124, 5);
+    --greenC: rgb(32, 164, 8);
+}
+
+* {
+    margin: 0;
+    padding: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    background-color: #e3f2fd;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button {
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    background: var(--greenS);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(26, 127, 55, 0.08);
+    transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background: var(--greenC);
+    transform: translateY(-2px) scale(1.03);
+    outline: none;
+}
+
+#promessesClient {
+    display: flex;
+    flex-flow: column;
+    margin-left: 10%;
+    font-size: larger;
+    p{
+        margin: 0%;
+    }
+}
+
+
+#main {
+    text-align: center;
+    place-content: center;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    place-self: center;
+    gap: 25px;
+}
+
+.card {
+    margin-top: 20px;
+    width: 30%;
+    aspect-ratio: auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+
+    * {
+        margin-bottom: 5px;
+    }
+
+    h3 {
+        align-items: center;
+        font-size: xx-large;
+        background-color: var(--greenS);
+        color: white;
+        border-radius: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        align-self: center;
+        text-transform: uppercase;
+    }
+
+    img {
+        border-radius: 20px;
+    }
+
+    h4 {
+        font-weight: 400;
+        text-align: center;
+        padding: 20px;
+    }
+
+
+}
+
+.card:hover {
+    scale: 1.05;
+    transition: 0.2s;
+}

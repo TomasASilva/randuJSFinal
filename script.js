@@ -24,7 +24,6 @@ fetch("https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
         infoResto.appendChild(texteBouton);
 
         // promessesClient
-
         const promClient = data.promessesClient;
         promClient.forEach(element => {
             const promessesClientP = document.createElement("p");
@@ -37,6 +36,7 @@ fetch("https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
 
         plat.forEach(plats => {
             const card = document.createElement("div");
+            card.className = "card";
             card.classList.add("plats");
 
             const nom = document.createElement("h3");
@@ -50,8 +50,8 @@ fetch("https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
             img.alt = plats.title;
 
             card.appendChild(nom);
-            card.appendChild(desc);
             card.appendChild(img);
+            card.appendChild(desc);
 
             productsSection.appendChild(card);
         });
@@ -61,7 +61,7 @@ fetch("https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
         let servicesA = data.services;
 
         servicesA.forEach(services => {
-         
+
             const card = document.createElement("div");
             card.classList.add("services");
 
@@ -115,3 +115,5 @@ fetch("https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
     });
 
 
+
+// .split() para cortar a string 
