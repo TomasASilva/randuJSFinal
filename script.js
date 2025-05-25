@@ -25,10 +25,16 @@ fetch("https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
 
         // promessesClient
         const promClient = data.promessesClient;
+        const divProm = document.createElement("div");
+        divProm.className = "divProm";
+        promessesClient.appendChild(divProm);
+
+
+
         promClient.forEach(element => {
             const promessesClientP = document.createElement("p");
             promessesClientP.textContent = element;
-            promessesClient.appendChild(promessesClientP);
+            divProm.appendChild(promessesClientP);
         });
 
         // main
