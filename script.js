@@ -19,11 +19,9 @@ fetch("https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
 
         const texteBouton = document.createElement("button");
         texteBouton.textContent = data.texteBouton;
-        texteBouton.setAttribute("href", "#idMenu");
-        // texteBouton.href = "#idMenu";
-        // texteBouton.addEventListener(`click`, () => {
-        //     document.getElementById("#idMenu").scrollIntoView({behavior : "smooth"});
-        // });
+        texteBouton.addEventListener("click", () => {
+            document.getElementById("idMenu").scrollIntoView({ behavior: "smooth" });
+        });
 
 
         infoResto.appendChild(nomCommercial);
